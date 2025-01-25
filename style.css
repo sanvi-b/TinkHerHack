@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Mono:wght@400;500&display=swap');
+
 /* General Reset */
 * {
     margin: 0;
@@ -6,94 +9,126 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #1c1c1e, #3a3a3c);
-    color: #f5f5f7;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fdfdfd;
+    line-height: 1.8;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: 20px 0;
-    border-bottom: 2px solid #2c2c2e;
+    padding: 30px 0;
+    background: #1e3c72;
+    color: #fdfdfd;
+    border-bottom: 4px solid #162447;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    color: #00d8ff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ff7a18;
+    letter-spacing: 2px;
 }
 
 header p {
-    font-size: 1.2rem;
-    color: #a1a1aa;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #d3d3d3;
 }
 
 /* Main Section */
 main {
     margin: 20px auto;
-    max-width: 800px;
-    background: #2c2c2e;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    max-width: 900px;
+    background: #1f4068;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 main h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #ff6f61;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #ffe484;
 }
 
 main p {
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 button {
-    background: #00d8ff;
-    color: #1c1c1e;
-    font-size: 1rem;
-    padding: 10px 20px;
+    background: #00d9a3;
+    color: #162447;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background: #008bba;
+    background: #00b386;
+    transform: scale(1.05);
 }
 
 /* Features Section */
 .features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
 }
 
 .feature-card {
-    background: #3a3a3c;
-    border-radius: 10px;
+    background: #112d4e;
+    border-radius: 15px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .feature-card h3 {
-    color: #ff6f61;
+    font-family: 'Roboto Mono', monospace;
+    color: #ff4d97;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .feature-card p {
-    color: #d1d1d6;
+    color: #f2f2f2;
+    font-size: 1rem;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Centered Feature Section */
+.centered-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
+    padding: 15px 0;
+    font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
-    color: #a1a1aa;
+    color: #c2c2c2;
+    border-top: 2px solid #162447;
 }
